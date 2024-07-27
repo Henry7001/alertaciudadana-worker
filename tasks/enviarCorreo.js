@@ -1,8 +1,4 @@
-const { MetricsApi, EventsApi } = require('klaviyo-api');
-
 require('dotenv').config();
-require('klaviyo-api').EventsApi;
-
 
 module.exports = async (payload, helpers) => {
   // Crear perfil en Klaviyo
