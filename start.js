@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-//app.listen(port, () => {
-  //console.log(`Server listening on port ${port}`);
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
   try {
     // Ejecuta el worker
     console.log(`Starting worker...`);
@@ -17,4 +17,4 @@ app.get('/', (req, res) => {
   } catch (error) {
     console.error('Error while starting the worker:', error);
   }
-//});
+});
